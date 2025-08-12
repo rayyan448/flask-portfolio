@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Hi, I'm Mohammed Rayyan P</h1>
+        <p>Web Developer | Python Enthusiast | Tech Explorer</p>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I’m passionate about coding and building useful applications. This portfolio showcases my work and skills.</p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li>VACCI-SUPPORT – Vaccination Reminder App</li>
+            <li>Dates & Nuts E-commerce Website (PYTHON Django)</li>
+            <li>Customer Churn Analysis</li>
+            <li>Parking System (PYTHON Django)</li>
+            <li>Robotic Arm Controller</li>
+            
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="/contact" method="POST">
+            <label>Name:</label><br>
+            <input type="text" name="name" required><br>
+
+            <label>Email:</label><br>
+            <input type="email" name="email" required><br>
+
+            <label>Message:</label><br>
+            <textarea name="message" required></textarea><br>
+
+            <button type="submit">Send</button>
+        </form>
+    </section>
+</body>
+</html>
